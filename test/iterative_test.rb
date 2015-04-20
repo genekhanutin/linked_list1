@@ -3,7 +3,8 @@ require 'minitest/autorun'
 require './lib/iterative'
 
 class LinkedListTest < Minitest::Test
-attr_reader :list
+  attr_reader :list
+
   def setup
     @list = LinkedList.new
   end

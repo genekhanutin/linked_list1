@@ -27,9 +27,10 @@ class LinkedList
 
   def last
     current_node = @head_node
-    until current_node == nil
+    until current_node.pointer == nil
       current_node = current_node.pointer
     end
+    current_node.data
   end
 
   def count
