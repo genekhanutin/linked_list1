@@ -36,7 +36,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_can_remove_items_from_list
-    skip
     list.push('hello')
     list.pop('hello')
 

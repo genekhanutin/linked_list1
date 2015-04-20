@@ -19,6 +19,17 @@ class LinkedList
   end
 
   def pop(element)
+    #find element before it
+    #set that elements pointer to nil
+    raise IndexError, "no data, empty" if empty?
+
+    current_node = @head_node
+    until current_node.pointer.pointer == nil
+      current_node = current_node.pointer
+    end
+    to_return = current_node.pointer.data
+    current_node.pointer = nil
+    to_return
   end
 
   def first
